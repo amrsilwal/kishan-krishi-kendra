@@ -32,3 +32,32 @@ const CROP_RECS = {
   garlic: { title: "Garlic Farming Package", desc: "Recommended items for garlic farming.", items: [3, 5] },
   terrace: { title: "Terrace Farming Package", desc: "Recommended items for terrace farming.", items: [6, 3, 5, 7] }
 };
+
+let cart = JSON.parse(localStorage.getItem("kkk_cart") || "[]");
+let posBill = [];
+let salesHistory = JSON.parse(localStorage.getItem("kkk_sales") || "[]");
+let currentFilter = "all";
+let currentLang = localStorage.getItem("kkk_lang") || "en";
+
+const $ = (id) => document.getElementById(id);
+const money = (n) => `NPR ${Number(n || 0).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+const productById = (id) => PRODUCTS.find(p => p.id === Number(id));
+
+function showToast(message, type = "success") {
+  const toast = $("toast");
+  if (!toast) return alert(message);
+  toast.textContent = message;
+  toast.className = `toast show ${type}`;
+  setTimeout(() => toast.className = "toast", 2600);
+}
+
+function encodeLines(lines) {
+  return encodeURIComponent(lines.filter(Boolean).join("\n"));
+}
+function openWhatsApp(lines) {
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeLines(lines)}`, "_blank");
+}
+
+function initLoading() {
+  setTimeout(() => $("loadingScreen")?.classList.add("hidden"), 100);
+}
