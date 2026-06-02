@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kishan Krishi Kendra Pvt. Ltd. - Nepal's Smart Agriculture Marketplace. Quality seeds, organic fertilizer, farming tools, irrigation products and organic marketplace for Nepali farmers." />
+  <meta name="keywords" content="Kishan Krishi Kendra, agriculture marketplace Nepal, seeds Nepal, organic products Nepal, farmer supply Nepal, agro products Nepal, organic marketplace Nepal, agriculture ecommerce Nepal" />
+  <meta name="author" content="Kishan Krishi Kendra Pvt. Ltd." />
+  <meta property="og:title" content="Kishan Krishi Kendra - From Farm Needs to Market Success" />
+  <meta property="og:description" content="Nepal's Smart Agriculture Marketplace for Farmers, Dealers and Organic Buyers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kishankendra.com" />
+  <title>Kishan Krishi Kendra Pvt. Ltd. | Nepal's Smart Agriculture Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loadingScreen">
+  <div class="loader-content">
+    <div class="loader-logo">🌿</div>
+    <div class="loader-brand">Kishan Krishi Kendra</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+</div>
+
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="announcement-bar">
+  <div class="announcement-scroll">
+    <span>🌾 All Nepal Delivery Available</span>
+    <span>🌿 100% Organic Products</span>
+    <span>📱 WhatsApp Order: +977-9851036309</span>
+    <span>🚜 Farmer Market Linkage Platform</span>
+    <span>🤝 Sub-Dealer Network Open</span>
+    <span>📦 COD Available</span>
+    <span>✨ Premium Quality Farming Supplies</span>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+  <div class="header-inner">
+    <div class="header-logo">
+      <a href="#home">
+        <div class="logo-mark">
+          <div class="logo-icon">
+            <span class="logo-leaf">🌿</span>
+            <span class="logo-grain">🌾</span>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">Kishan Krishi Kendra</span>
+            <span class="logo-sub">Pvt. Ltd.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <nav class="header-nav" id="mainNav">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#organic" class="nav-link">Organic Market</a></li>
+        <li><a href="#crop-advisor" class="nav-link">Crop Advisor</a></li>
+        <li><a href="#farmer-sell" class="nav-link">Sell Farm Product</a></li>
+        <li><a href="#dealer" class="nav-link">Become Dealer</a></li>
+        <li><a href="#pos" class="nav-link">POS Terminal</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-btn" id="langToggle" title="Switch Language">
+        <span class="lang-icon">🌐</span>
+        <span id="langLabel">NP</span>
+      </button>
+      <button class="cart-btn" id="cartToggle">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <a href="https://wa.me/9779851036309" target="_blank" class="wa-btn-header">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== CART SIDEBAR ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+    <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <div class="empty-icon">🛒</div>
+      <p>Your cart is empty</p>
+      <a href="#shop" class="btn-primary-sm">Start Shopping</a>
+    </div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-summary">
+      <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">NPR 0</span></div>
+      <div class="summary-row"><span>Delivery</span><span class="delivery-note">Calculated at checkout</span></div>
+      <div class="summary-row total"><span>Total</span><span id="cartTotal">NPR 0</span></div>
+    </div>
+    <button class="btn-checkout" id="proceedCheckout">
+      <i class="fas fa-lock"></i> Proceed to Checkout
+    </button>
+    <button class="btn-wa-order" id="whatsappOrder">
+      <i class="fab fa-whatsapp"></i> Order via WhatsApp
+    </button>
+    <p class="cart-note">🚚 Free delivery info available on checkout</p>
+  </div>
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-particles">
+      <div class="particle p1">🌾</div>
+      <div class="particle p2">🌿</div>
+      <div class="particle p3">🍃</div>
+      <div class="particle p4">🌻</div>
+      <div class="particle p5">🍅</div>
+      <div class="particle p6">🥬</div>
+    </div>
+    <div class="hero-gradient"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span>🇳🇵 Nepal's #1 Agriculture Marketplace</span>
+    </div>
+    <h1 class="hero-title">
+      From Farm Needs<br>to <span class="highlight">Market Success</span>
+    </h1>
+    <p class="hero-subtitle en-text">
+      Kishan Krishi Kendra Pvt. Ltd. supplies quality farming products to Nepali farmers and connects farmer-produced organic goods with reliable markets across Nepal.
+    </p>
+    <p class="hero-subtitle np-text" style="display:none">
+      किसान कृषि केन्द्र प्रा.लि. नेपाली किसानहरूलाई गुणस्तरीय कृषि उत्पादनहरू आपूर्ति गर्दछ र किसानद्वारा उत्पादित जैविक वस्तुहरूलाई नेपालभर विश्वसनीय बजारहरूसँग जोड्दछ।
+    </p>
+    <div class="hero-ctas">
+      <a href="#shop" class="cta-btn primary">
+        <i class="fas fa-store"></i>
+        <span class="en-text">Order Products Online</span>
+        <span class="np-text" style="display:none">अनलाइन उत्पादन अर्डर</span>
+      </a>
+      <a href="#farmer-sell" class="cta-btn secondary">
+        <i class="fas fa-tractor"></i>
+        <span class="en-text">Sell Farm Product</span>
+        <span class="np-text" style="display:none">फार्म उत्पाद बेच्नुस्</span>
+      </a>
+      <a href="#dealer" class="cta-btn accent">
+        <i class="fas fa-handshake"></i>
+        <span class="en-text">Become Sub Dealer</span>
+        <span class="np-text" style="display:none">सब-डिलर बन्नुस्</span>
+      </a>
+      <a href="#pos" class="cta-btn dark">
+        <i class="fas fa-cash-register"></i>
+        <span class="en-text">Open POS Terminal</span>
+        <span class="np-text" style="display:none">POS टर्मिनल खोल्नुस्</span>
+      </a>
+      <a href="https://wa.me/9779851036309" target="_blank" class="cta-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp Inquiry</span>
+      </a>
+    </div>
+    <div class="trust-badges">
+      <div class="badge"><i class="fas fa-truck"></i><span class="en-text">All Nepal Delivery</span><span class="np-text" style="display:none">सम्पूर्ण नेपाल डेलिभरी</span></div>
+      <div class="badge"><i class="fas fa-mobile-alt"></i><span class="en-text">Online Order</span><span class="np-text" style="display:none">अनलाइन अर्डर</span></div>
+      <div class="badge"><i class="fas fa-leaf"></i><span class="en-text">Organic Market</span><span class="np-text" style="display:none">जैविक बजार</span></div>
+      <div class="badge"><i class="fas fa-users"></i><span class="en-text">Dealer Network</span><span class="np-text" style="display:none">डिलर नेटवर्क</span></div>
+      <div class="badge"><i class="fas fa-cash-register"></i><span class="en-text">POS Ready</span><span class="np-text" style="display:none">POS तयार</span></div>
+      <div class="badge"><i class="fas fa-globe"></i><span class="en-text">Export Vision</span><span class="np-text" style="display:none">निर्यात दृष्टि</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUICK CONTACT BAR ===== -->
+<section class="quick-contact">
+  <div class="container">
+    <div class="qc-grid">
+      <a href="tel:+9779851036309" class="qc-item">
+        <div class="qc-icon"><i class="fas fa-phone"></i></div>
+        <div class="qc-info">
+          <span class="qc-label en-text">Call Us</span>
+          <span class="qc-label np-text" style="display:none">फोन गर्नुस्</span>
+          <span class="qc-value">+977-9851036309</span>
+        </div>
+      </a>
+      <a href="https://wa.me/9779851036309" target="_blank" class="qc-item">
+        <div class="qc-icon wa"><i class="fab fa-whatsapp"></i></div>
+        <div class="qc-info">
+          <span class="qc-label">WhatsApp</span>
+          <span class="qc-value">+977-9851036309</span>
+        </div>
+      </a>
+      <a href="mailto:kishankendra@gmail.com" class="qc-item">
+        <div class="qc-icon email"><i class="fas fa-envelope"></i></div>
+        <div class="qc-info">
+          <span class="qc-label en-text">Email</span>
+          <span class="qc-label np-text" style="display:none">इमेल</span>
+          <span class="qc-value">kishankendra@gmail.com</span>
+        </div>
+      </a>
+      <div class="qc-item">
+        <div class="qc-icon loc"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="qc-info">
+          <span class="qc-label en-text">Location</span>
+          <span class="qc-label np-text" style="display:none">ठेगाना</span>
+          <span class="qc-value">CTC Mall, Sundhara, Kathmandu</span>
+        </div>
+      </div>
+      <a href="https://www.facebook.com/profile.php?id=61575808175827" target="_blank" class="qc-item">
+        <div class="qc-icon fb"><i class="fab fa-facebook"></i></div>
+        <div class="qc-info">
+          <span class="qc-label">Facebook</span>
+          <span class="qc-value">Kishan Krishi Kendra</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title en-text">Nepal's Smart Agriculture Marketplace</h2>
+      <h2 class="section-title np-text" style="display:none">नेपालको स्मार्ट कृषि बजार</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-image-card">
+          <div class="about-emoji-grid">
+            <div class="emoji-card">🌾<span>Seeds</span></div>
+            <div class="emoji-card">🌿<span>Organic</span></div>
+            <div class="emoji-card">🚜<span>Farming</span></div>
+            <div class="emoji-card">💧<span>Irrigation</span></div>
+            <div class="emoji-card">🏪<span>Market</span></div>
+            <div class="emoji-card">🤝<span>Connect</span></div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">500+</div>
+            <div class="stat-label en-text">Products</div>
+            <div class="stat-label np-text" style="display:none">उत्पादनहरू</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">77</div>
+            <div class="stat-label en-text">Districts Covered</div>
+            <div class="stat-label np-text" style="display:none">जिल्लाहरू</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label en-text">Organic Market</div>
+            <div class="stat-label np-text" style="display:none">जैविक बजार</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label en-text">WhatsApp Support</div>
+            <div class="stat-label np-text" style="display:none">सहयोग</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h3 class="en-text">किसानका आवश्यकतादेखि बजारसम्मको भरोसायोग्य साथी</h3>
+        <p class="en-text">Kishan Krishi Kendra Pvt. Ltd. is an agriculture-focused business established to serve Nepali farmers with quality farming inputs and market access. We bridge the gap between farmers and markets.</p>
+        <p class="np-text" style="display:none">किसान कृषि केन्द्र प्रा.लि. नेपाली किसानहरूलाई गुणस्तरीय कृषि सामग्री र बजार पहुँच प्रदान गर्न स्थापित एक कृषि-केन्द्रित व्यवसाय हो।</p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">🌱</div>
+            <div class="feature-text">
+              <h4 class="en-text">Farmer Supply Marketplace</h4>
+              <h4 class="np-text" style="display:none">किसान आपूर्ति बजार</h4>
+              <p class="en-text">Seeds, fertilizers, tools, irrigation and more</p>
+              <p class="np-text" style="display:none">बीउ, मल, औजार, सिँचाइ र थप</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🌿</div>
+            <div class="feature-text">
+              <h4 class="en-text">Organic Product Marketplace</h4>
+              <h4 class="np-text" style="display:none">जैविक उत्पाद बजार</h4>
+              <p class="en-text">100% organic products from Nepali farms</p>
+              <p class="np-text" style="display:none">नेपाली फार्मबाट १००% जैविक उत्पादन</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔗</div>
+            <div class="feature-text">
+              <h4 class="en-text">Market Linkage Platform</h4>
+              <h4 class="np-text" style="display:none">बजार जोडाई प्लेटफर्म</h4>
+              <p class="en-text">Connect farmers directly to buyers and markets</p>
+              <p class="np-text" style="display:none">किसानलाई सिधा क्रेता र बजारसँग जोड्नुस्</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🌍</div>
+            <div class="feature-text">
+              <h4 class="en-text">Future Export Vision</h4>
+              <h4 class="np-text" style="display:none">भविष्य निर्यात दृष्टि</h4>
+              <p class="en-text">Export premium Nepali organic products globally</p>
+              <p class="np-text" style="display:none">विश्वभर नेपाली जैविक उत्पादन निर्यात</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORY SECTION ===== -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Browse by Category</div>
+      <h2 class="section-title en-text">All Farming Products in One Place</h2>
+      <h2 class="section-title np-text" style="display:none">एकै ठाउँमा सबै कृषि उत्पादनहरू</h2>
+    </div>
+    <div class="category-grid" id="categoryGrid">
+      <div class="cat-card active" data-cat="all">
+        <div class="cat-icon">🛒</div>
+        <span class="en-text">All Products</span>
+        <span class="np-text" style="display:none">सबै</span>
+      </div>
+      <div class="cat-card" data-cat="seeds">
+        <div class="cat-icon">🌱</div>
+        <span class="en-text">Seeds / Beu</span>
+        <span class="np-text" style="display:none">बीउ</span>
+      </div>
+      <div class="cat-card" data-cat="fertilizer">
+        <div class="cat-icon">🌿</div>
+        <span class="en-text">Organic Fertilizer</span>
+        <span class="np-text" style="display:none">जैविक मल</span>
+      </div>
+      <div class="cat-card" data-cat="tools">
+        <div class="cat-icon">🔧</div>
+        <span class="en-text">Farming Tools</span>
+        <span class="np-text" style="display:none">कृषि औजार</span>
+      </div>
+      <div class="cat-card" data-cat="irrigation">
+        <div class="cat-icon">💧</div>
+        <span class="en-text">Irrigation</span>
+        <span class="np-text" style="display:none">सिँचाइ</span>
+      </div>
+      <div class="cat-card" data-cat="nursery">
+        <div class="cat-icon">🪴</div>
+        <span class="en-text">Nursery Items</span>
+        <span class="np-text" style="display:none">नर्सरी</span>
+      </div>
+      <div class="cat-card" data-cat="support">
+        <div class="cat-icon">🏗️</div>
+        <span class="en-text">Crop Support</span>
+        <span class="np-text" style="display:none">बाली सहयोग</span>
+      </div>
+      <div class="cat-card" data-cat="organic">
+        <div class="cat-icon">🥗</div>
+        <span class="en-text">Organic Market</span>
+        <span class="np-text" style="display:none">जैविक बजार</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP SECTION ===== -->
+<section class="shop" id="shop">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Online Store</div>
+      <h2 class="section-title en-text">Shop Farming Products</h2>
+      <h2 class="section-title np-text" style="display:none">कृषि उत्पादन किन्नुस्</h2>
+    </div>
+
+    <div class="shop-controls">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="productSearch" placeholder="Search products..." class="en-text" />
+        <input type="text" id="productSearchNp" placeholder="उत्पादन खोज्नुस्..." class="np-text" style="display:none" />
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="seeds">Seeds</button>
+        <button class="filter-btn" data-filter="fertilizer">Fertilizer</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="irrigation">Irrigation</button>
+        <button class="filter-btn" data-filter="organic">Organic</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- Products rendered by JS -->
+    </div>
+
+    <div class="no-products" id="noProducts" style="display:none">
+      <div class="no-icon">🔍</div>
+      <p class="en-text">No products found. Try a different search.</p>
+      <p class="np-text" style="display:none">कुनै उत्पादन फेला परेन।</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CROP ADVISOR SECTION ===== -->
+<section class="crop-advisor" id="crop-advisor">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Smart Crop Advisor</div>
+      <h2 class="section-title en-text">What Are You Growing? 🌾</h2>
+      <h2 class="section-title np-text" style="display:none">तपाईं के उगाउँदै हुनुहुन्छ? 🌾</h2>
+      <p class="section-sub en-text">Select your crop and we'll recommend the perfect products for your farm</p>
+      <p class="section-sub np-text" style="display:none">आफ्नो बाली छान्नुस् र हामी तपाईंको खेतका लागि उपयुक्त उत्पादनहरू सिफारिस गर्नेछौं</p>
+    </div>
+
+    <div class="crop-grid">
+      <div class="crop-card" data-crop="tomato">
+        <div class="crop-emoji">🍅</div>
+        <span class="en-text">Tomato</span>
+        <span class="np-text" style="display:none">टमाटर</span>
+      </div>
+      <div class="crop-card" data-crop="rice">
+        <div class="crop-emoji">🌾</div>
+        <span class="en-text">Rice</span>
+        <span class="np-text" style="display:none">धान</span>
+      </div>
+      <div class="crop-card" data-crop="potato">
+        <div class="crop-emoji">🥔</div>
+        <span class="en-text">Potato</span>
+        <span class="np-text" style="display:none">आलु</span>
+      </div>
+      <div class="crop-card" data-crop="maize">
+        <div class="crop-emoji">🌽</div>
+        <span class="en-text">Maize</span>
+        <span class="np-text" style="display:none">मकै</span>
+      </div>
+      <div class="crop-card" data-crop="cucumber">
+        <div class="crop-emoji">🥒</div>
+        <span class="en-text">Cucumber</span>
+        <span class="np-text" style="display:none">काँक्रो</span>
+      </div>
+      <div class="crop-card" data-crop="cauliflower">
+        <div class="crop-emoji">🥦</div>
+        <span class="en-text">Cauliflower</span>
+        <span class="np-text" style="display:none">काउली</span>
+      </div>
+      <div class="crop-card" data-crop="onion">
+        <div class="crop-emoji">🧅</div>
+        <span class="en-text">Onion</span>
+        <span class="np-text" style="display:none">प्याज</span>
+      </div>
+      <div class="crop-card" data-crop="garlic">
+        <div class="crop-emoji">🧄</div>
+        <span class="en-text">Garlic</span>
+        <span class="np-text" style="display:none">लसुन</span>
+      </div>
+      <div class="crop-card" data-crop="terrace">
+        <div class="crop-emoji">🏔️</div>
+        <span class="en-text">Terrace Farming</span>
+        <span class="np-text" style="display:none">सिँढी खेती</span>
+      </div>
+    </div>
+
+    <div class="crop-recommendations" id="cropRecommendations" style="display:none">
+      <div class="rec-header">
+        <h3 id="recTitle"></h3>
+        <p id="recDesc"></p>
+      </div>
+      <div class="rec-products" id="recProducts"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORGANIC MARKETPLACE SECTION ===== -->
+<section class="organic-market" id="organic">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Organic Marketplace</div>
+      <h2 class="section-title en-text">Fresh From Nepali Farms 🌿</h2>
+      <h2 class="section-title np-text" style="display:none">नेपाली खेतबाट ताजा 🌿</h2>
+      <p class="section-sub en-text">100% organic products sourced directly from verified Nepali farmers</p>
+      <p class="section-sub np-text" style="display:none">प्रमाणित नेपाली किसानहरूबाट सिधै स्रोत गरिएका १००% जैविक उत्पादनहरू</p>
+    </div>
+
+    <div class="organic-trust-badges">
+      <div class="otb"><i class="fas fa-check-circle"></i><span>Farmer Sourced</span></div>
+      <div class="otb"><i class="fas fa-shield-alt"></i><span>Quality Checked</span></div>
+      <div class="otb"><i class="fas fa-mountain"></i><span>Nepal Grown</span></div>
+      <div class="otb"><i class="fas fa-truck"></i><span>Fresh Delivery</span></div>
+      <div class="otb"><i class="fas fa-leaf"></i><span>Organic Certified</span></div>
+    </div>
+
+    <div class="organic-categories">
+      <div class="org-cat-card">
+        <div class="org-cat-icon">🥦</div>
+        <h3 class="en-text">Organic Vegetables</h3>
+        <h3 class="np-text" style="display:none">जैविक तरकारी</h3>
+        <p class="en-text">Fresh seasonal vegetables grown organically</p>
+        <p class="np-text" style="display:none">जैविक रूपमा उगाइएका ताजा मौसमी तरकारीहरू</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+      <div class="org-cat-card featured">
+        <div class="org-cat-icon">🌾</div>
+        <h3 class="en-text">Grains & Rice</h3>
+        <h3 class="np-text" style="display:none">अन्न र चामल</h3>
+        <p class="en-text">Premium organic rice and grains from hill farms</p>
+        <p class="np-text" style="display:none">पहाडी खेतबाट प्रिमियम जैविक चामल र अन्न</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+      <div class="org-cat-card">
+        <div class="org-cat-icon">🫘</div>
+        <h3 class="en-text">Pulses / Dal</h3>
+        <h3 class="np-text" style="display:none">दाल / गेडागुडी</h3>
+        <p class="en-text">Organic lentils, beans and pulses</p>
+        <p class="np-text" style="display:none">जैविक मसुर, सिमी र दाल</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+      <div class="org-cat-card">
+        <div class="org-cat-icon">🌶️</div>
+        <h3 class="en-text">Spices</h3>
+        <h3 class="np-text" style="display:none">मसलाहरू</h3>
+        <p class="en-text">Authentic Nepali organic spices</p>
+        <p class="np-text" style="display:none">प्रामाणिक नेपाली जैविक मसलाहरू</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+      <div class="org-cat-card featured">
+        <div class="org-cat-icon">🍯</div>
+        <h3 class="en-text">Honey</h3>
+        <h3 class="np-text" style="display:none">मह</h3>
+        <p class="en-text">Pure wild and farm honey from Nepal</p>
+        <p class="np-text" style="display:none">नेपालबाट शुद्ध जंगली र फार्म मह</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+      <div class="org-cat-card">
+        <div class="org-cat-icon">🏔️</div>
+        <h3 class="en-text">Local Nepali Products</h3>
+        <h3 class="np-text" style="display:none">स्थानीय नेपाली उत्पादन</h3>
+        <p class="en-text">Unique local products from across Nepal</p>
+        <p class="np-text" style="display:none">नेपालभरका अनुठा स्थानीय उत्पादनहरू</p>
+        <a href="#shop" class="org-btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FARMER SELL SECTION ===== -->
+<section class="farmer-sell" id="farmer-sell">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Farmer Market Linkage</div>
+      <h2 class="section-title en-text">Sell Your Farm Production 🌾</h2>
+      <h2 class="section-title np-text" style="display:none">आफ्नो खेतीपाती बेच्नुस् 🌾</h2>
+      <p class="section-sub en-text">Submit your farm produce and we'll connect you with the right buyers across Nepal</p>
+      <p class="section-sub np-text" style="display:none">आफ्नो खेती उत्पाद पेश गर्नुस् र हामी तपाईंलाई नेपालभरका सही क्रेताहरूसँग जोड्नेछौं</p>
+    </div>
+
+    <div class="form-card">
+      <form id="farmerForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label><i class="fas fa-user"></i> <span class="en-text">Farmer Name *</span><span class="np-text" style="display:none">किसानको नाम *</span></label>
+            <input type="text" id="farmerName" required placeholder="Your full name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fab fa-whatsapp"></i> <span class="en-text">Phone/WhatsApp *</span><span class="np-text" style="display:none">फोन/WhatsApp *</span></label>
+            <input type="tel" id="farmerPhone" required placeholder="+977-98XXXXXXXX" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-map-marker-alt"></i> <span class="en-text">District/Municipality *</span><span class="np-text" style="display:none">जिल्ला/नगरपालिका *</span></label>
+            <input type="text" id="farmerDistrict" required placeholder="e.g. Kathmandu, Bhaktapur" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-seedling"></i> <span class="en-text">Product Name *</span><span class="np-text" style="display:none">उत्पादनको नाम *</span></label>
+            <input type="text" id="farmerProduct" required placeholder="e.g. Organic Tomato, Rice" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-weight-hanging"></i> <span class="en-text">Quantity Available</span><span class="np-text" style="display:none">उपलब्ध मात्रा</span></label>
+            <input type="text" id="farmerQuantity" placeholder="e.g. 100 kg, 50 bags" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-tag"></i> <span class="en-text">Expected Price</span><span class="np-text" style="display:none">अपेक्षित मूल्य</span></label>
+            <input type="text" id="farmerPrice" placeholder="e.g. NPR 80 per kg" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-calendar"></i> <span class="en-text">Harvest Date</span><span class="np-text" style="display:none">कटनी मिति</span></label>
+            <input type="date" id="farmerHarvest" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-leaf"></i> <span class="en-text">Farming Method</span><span class="np-text" style="display:none">खेती विधि</span></label>
+            <select id="farmerMethod">
+              <option value="organic">Organic</option>
+              <option value="natural">Natural</option>
+              <option value="traditional">Traditional</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-location-dot"></i> <span class="en-text">Pickup Location</span><span class="np-text" style="display:none">सङ्कलन स्थान</span></label>
+            <input type="text" id="farmerPickup" placeholder="Farm address / pickup point" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label><i class="fas fa-comment"></i> <span class="en-text">Additional Message</span><span class="np-text" style="display:none">थप सन्देश</span></label>
+          <textarea id="farmerMessage" rows="3" placeholder="Any additional information about your produce..."></textarea>
+        </div>
+        <button type="submit" class="submit-wa-btn">
+          <i class="fab fa-whatsapp"></i>
+          <span class="en-text">Submit via WhatsApp</span>
+          <span class="np-text" style="display:none">WhatsApp मार्फत पठाउनुस्</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUB-DEALER SECTION ===== -->
+<section class="dealer" id="dealer">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Dealer Network</div>
+      <h2 class="section-title en-text">Become a Sub-Dealer 🤝</h2>
+      <h2 class="section-title np-text" style="display:none">सब-डिलर बन्नुस् 🤝</h2>
+      <p class="section-sub en-text">Join Nepal's fastest growing agriculture dealer network</p>
+      <p class="section-sub np-text" style="display:none">नेपालको सबैभन्दा द्रुत रूपमा बढ्दो कृषि डिलर नेटवर्कमा सामेल हुनुस्</p>
+    </div>
+
+    <div class="dealer-benefits">
+      <div class="dealer-benefit">
+        <div class="db-icon">💰</div>
+        <h4 class="en-text">Wholesale Prices</h4>
+        <h4 class="np-text" style="display:none">थोक मूल्य</h4>
+      </div>
+      <div class="dealer-benefit">
+        <div class="db-icon">📦</div>
+        <h4 class="en-text">Priority Delivery</h4>
+        <h4 class="np-text" style="display:none">प्राथमिकता डेलिभरी</h4>
+      </div>
+      <div class="dealer-benefit">
+        <div class="db-icon">📊</div>
+        <h4 class="en-text">Business Support</h4>
+        <h4 class="np-text" style="display:none">व्यापार सहयोग</h4>
+      </div>
+      <div class="dealer-benefit">
+        <div class="db-icon">🎓</div>
+        <h4 class="en-text">Training & Tools</h4>
+        <h4 class="np-text" style="display:none">प्रशिक्षण र औजार</h4>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form id="dealerForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label><i class="fas fa-store"></i> <span class="en-text">Business Name *</span><span class="np-text" style="display:none">व्यापारको नाम *</span></label>
+            <input type="text" id="dealerBusiness" required placeholder="Your shop/business name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-user"></i> <span class="en-text">Owner Name *</span><span class="np-text" style="display:none">मालिकको नाम *</span></label>
+            <input type="text" id="dealerOwner" required placeholder="Owner full name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fab fa-whatsapp"></i> <span class="en-text">Phone/WhatsApp *</span><span class="np-text" style="display:none">फोन/WhatsApp *</span></label>
+            <input type="tel" id="dealerPhone" required placeholder="+977-98XXXXXXXX" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-map-marker-alt"></i> <span class="en-text">District</span><span class="np-text" style="display:none">जिल्ला</span></label>
+            <input type="text" id="dealerDistrict" placeholder="Your district" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-id-card"></i> <span class="en-text">PAN/VAT Number</span><span class="np-text" style="display:none">PAN/VAT नम्बर</span></label>
+            <input type="text" id="dealerPan" placeholder="PAN or VAT number" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-shop"></i> <span class="en-text">Shop Type</span><span class="np-text" style="display:none">पसलको प्रकार</span></label>
+            <select id="dealerShopType">
+              <option value="agro-vet">Agro Vet</option>
+              <option value="retail">Retail Shop</option>
+              <option value="wholesale">Wholesale</option>
+              <option value="cooperative">Cooperative</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-boxes-stacked"></i> <span class="en-text">Monthly Purchase Capacity</span><span class="np-text" style="display:none">मासिक खरिद क्षमता</span></label>
+            <input type="text" id="dealerCapacity" placeholder="e.g. NPR 50,000 per month" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-list"></i> <span class="en-text">Interested Products</span><span class="np-text" style="display:none">रुचि भएका उत्पादनहरू</span></label>
+            <input type="text" id="dealerProducts" placeholder="e.g. Seeds, Fertilizer, Tools" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label><i class="fas fa-comment"></i> <span class="en-text">Message</span><span class="np-text" style="display:none">सन्देश</span></label>
+          <textarea id="dealerMessage" rows="3" placeholder="Tell us about your business..."></textarea>
+        </div>
+        <button type="submit" class="submit-wa-btn">
+          <i class="fab fa-whatsapp"></i>
+          <span class="en-text">Register via WhatsApp</span>
+          <span class="np-text" style="display:none">WhatsApp मार्फत दर्ता गर्नुस्</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BULK/CORPORATE INQUIRY ===== -->
+<section class="bulk-inquiry" id="bulk">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Bulk & Corporate</div>
+      <h2 class="section-title en-text">Bulk & Corporate Buyer Inquiry</h2>
+      <h2 class="section-title np-text" style="display:none">थोक र कर्पोरेट खरिदकर्ता जिज्ञासा</h2>
+      <p class="section-sub en-text">Hotels, Restaurants, Supermarkets, NGOs and Corporate Buyers are welcome</p>
+      <p class="section-sub np-text" style="display:none">होटल, रेस्टुरेन्ट, सुपरमार्केट, NGO र कर्पोरेट खरिदकर्ताहरू स्वागत छ</p>
+    </div>
+
+    <div class="form-card">
+      <form id="bulkForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label><i class="fas fa-building"></i> <span class="en-text">Company Name *</span><span class="np-text" style="display:none">कम्पनीको नाम *</span></label>
+            <input type="text" id="bulkCompany" required placeholder="Your company/hotel/restaurant name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-user-tie"></i> <span class="en-text">Contact Person *</span><span class="np-text" style="display:none">सम्पर्क व्यक्ति *</span></label>
+            <input type="text" id="bulkContact" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fab fa-whatsapp"></i> <span class="en-text">Phone/WhatsApp *</span><span class="np-text" style="display:none">फोन/WhatsApp *</span></label>
+            <input type="tel" id="bulkPhone" required placeholder="+977-98XXXXXXXX" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-envelope"></i> <span class="en-text">Email</span><span class="np-text" style="display:none">इमेल</span></label>
+            <input type="email" id="bulkEmail" placeholder="company@email.com" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-seedling"></i> <span class="en-text">Product Required</span><span class="np-text" style="display:none">आवश्यक उत्पादन</span></label>
+            <input type="text" id="bulkProduct" placeholder="e.g. Organic Vegetables, Rice, Dal" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-weight-hanging"></i> <span class="en-text">Quantity Required</span><span class="np-text" style="display:none">आवश्यक मात्रा</span></label>
+            <input type="text" id="bulkQuantity" placeholder="e.g. 500 kg per week" />
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-truck"></i> <span class="en-text">Delivery Location</span><span class="np-text" style="display:none">डेलिभरी स्थान</span></label>
+            <input type="text" id="bulkDelivery" placeholder="Full delivery address" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label><i class="fas fa-comment"></i> <span class="en-text">Message</span><span class="np-text" style="display:none">सन्देश</span></label>
+          <textarea id="bulkMessage" rows="3" placeholder="Tell us your requirement in detail..."></textarea>
+        </div>
+        <button type="submit" class="submit-wa-btn">
+          <i class="fab fa-whatsapp"></i>
+          <span class="en-text">Send Inquiry via WhatsApp</span>
+          <span class="np-text" style="display:none">WhatsApp मार्फत जिज्ञासा पठाउनुस्</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPORT SECTION ===== -->
+<section class="export-vision" id="export">
+  <div class="container">
+    <div class="export-content">
+      <div class="export-badge">🌍 Future Vision</div>
+      <h2 class="en-text">Export Nepali Organic Products to the World</h2>
+      <h2 class="np-text" style="display:none">नेपाली जैविक उत्पादन विश्वमा निर्यात गरौं</h2>
+      <p class="en-text">Our long-term vision is to promote premium Nepali organic products in international markets through reliable sourcing, quality control and farmer partnerships. Nepal's unique geography, traditional farming practices and organic heritage make our products truly world-class.</p>
+      <p class="np-text" style="display:none">हाम्रो दीर्घकालीन दृष्टि भनेको विश्वसनीय स्रोत, गुणस्तर नियन्त्रण र किसान साझेदारीमार्फत अन्तर्राष्ट्रिय बजारमा उच्च-स्तरीय नेपाली जैविक उत्पादनहरू प्रवर्धन गर्नु हो।</p>
+      <div class="export-products">
+        <div class="exp-item">🍯<span>Honey</span></div>
+        <div class="exp-item">🌾<span>Organic Rice</span></div>
+        <div class="exp-item">🌶️<span>Spices</span></div>
+        <div class="exp-item">🫘<span>Lentils</span></div>
+        <div class="exp-item">🌿<span>Herbs</span></div>
+        <div class="exp-item">🫚<span>Oils</span></div>
+      </div>
+      <a href="https://wa.me/9779851036309?text=Hello%20Kishan%20Krishi%20Kendra%2C%20I%20am%20interested%20in%20bulk/export%20inquiry." target="_blank" class="export-btn">
+        <i class="fab fa-whatsapp"></i>
+        Bulk / Export Inquiry
+      </a>
+    </div>
+    <div class="export-globe">
+      <div class="globe-visual">
+        <div class="globe-ring r1"></div>
+        <div class="globe-ring r2"></div>
+        <div class="globe-ring r3"></div>
+        <div class="globe-center">🌏</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POS SECTION ===== -->
+<section class="pos-section" id="pos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">POS Terminal</div>
+      <h2 class="section-title en-text">Shop POS Billing System 🖥️</h2>
+      <h2 class="section-title np-text" style="display:none">पसल POS बिलिङ प्रणाली 🖥️</h2>
+      <p class="section-sub en-text">Complete point-of-sale system for Kishan Krishi Kendra physical shop</p>
+      <p class="section-sub np-text" style="display:none">किसान कृषि केन्द्र भौतिक पसलका लागि पूर्ण POS प्रणाली</p>
+    </div>
+
+    <div class="pos-terminal">
+      <!-- POS Header -->
+      <div class="pos-header-bar">
+        <div class="pos-brand">
+          <span class="pos-brand-icon">🌿</span>
+          <div>
+            <div class="pos-brand-name">Kishan Krishi Kendra POS</div>
+            <div class="pos-brand-date" id="posDateTime"></div>
+          </div>
+        </div>
+        <div class="pos-header-actions">
+          <button class="pos-btn-sm" id="viewSalesHistory">
+            <i class="fas fa-history"></i> Sales History
+          </button>
+          <button class="pos-btn-sm danger" id="clearPOS">
+            <i class="fas fa-trash"></i> Clear
+          </button>
+        </div>
+      </div>
+
+      <div class="pos-layout">
+        <!-- POS Left: Product Search & Selection -->
+        <div class="pos-left">
+          <div class="pos-search-area">
+            <div class="pos-search">
+              <i class="fas fa-search"></i>
+              <input type="text" id="posSearch" placeholder="Search product to add..." />
+            </div>
+          </div>
+          <div class="pos-product-list" id="posProductList">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- POS Right: Bill -->
+        <div class="pos-right">
+          <div class="pos-customer">
+            <input type="text" id="posCustomer" placeholder="Customer Name (Optional)" />
+          </div>
+
+          <div class="pos-bill-items" id="posBillItems">
+            <div class="pos-empty-bill">
+              <div class="pos-empty-icon">🧾</div>
+              <p>Search and add products to bill</p>
+            </div>
+          </div>
+
+          <div class="pos-totals">
+            <div class="pos-total-row">
+              <span>Subtotal</span>
+              <span id="posSubtotal">NPR 0.00</span>
+            </div>
+            <div class="pos-total-row discount-row">
+              <span>Discount</span>
+              <div class="discount-input-wrap">
+                <input type="number" id="posDiscount" placeholder="0" min="0" />
+                <select id="posDiscountType">
+                  <option value="flat">NPR</option>
+                  <option value="percent">%</option>
+                </select>
+              </div>
+            </div>
+            <div class="pos-total-row grand">
+              <span>Total</span>
+              <span id="posTotal">NPR 0.00</span>
+            </div>
+            <div class="pos-total-row">
+              <span>Paid Amount</span>
+              <input type="number" id="posPaid" placeholder="0.00" min="0" />
+            </div>
+            <div class="pos-total-row change-row">
+              <span id="changeDueLabel">Change</span>
+              <span id="posChange">NPR 0.00</span>
+            </div>
+          </div>
+
+          <div class="pos-payment-methods">
+            <label>Payment Method:</label>
+            <div class="pos-payment-options">
+              <label class="pos-pay-opt active" data-method="cash">
+                <input type="radio" name="posPayment" value="cash" checked />
+                <i class="fas fa-money-bill-wave"></i> Cash
+              </label>
+              <label class="pos-pay-opt" data-method="cod">
+                <input type="radio" name="posPayment" value="cod" />
+                <i class="fas fa-truck"></i> COD
+              </label>
+              <label class="pos-pay-opt" data-method="bank">
+                <input type="radio" name="posPayment" value="bank" />
+                <i class="fas fa-university"></i> Bank
+              </label>
+              <label class="pos-pay-opt" data-method="esewa">
+                <input type="radio" name="posPayment" value="esewa" />
+                <span class="pay-logo-text esewa-color">eSewa</span>
+              </label>
+              <label class="pos-pay-opt" data-method="khalti">
+                <input type="radio" name="posPayment" value="khalti" />
+                <span class="pay-logo-text khalti-color">Khalti</span>
+              </label>
+              <label class="pos-pay-opt" data-method="fonepay">
+                <input type="radio" name="posPayment" value="fonepay" />
+                <i class="fas fa-qrcode"></i> FonePay
+              </label>
+            </div>
+          </div>
+
+          <div class="pos-actions">
+            <button class="pos-action-btn save" id="saveSale">
+              <i class="fas fa-save"></i> Save Sale
+            </button>
+            <button class="pos-action-btn print" id="printInvoice">
+              <i class="fas fa-print"></i> Print Invoice
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sales History Modal -->
+    <div class="modal-overlay" id="salesHistoryModal" style="display:none">
+      <div class="modal-box large">
+        <div class="modal-header">
+          <h3><i class="fas fa-history"></i> Sales History</h3>
+          <button class="modal-close" id="closeSalesHistory"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" id="salesHistoryContent">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APP COMING SOON ===== -->
+<section class="app-coming-soon">
+  <div class="container">
+    <div class="app-content">
+      <div class="app-info">
+        <div class="app-tag">📱 Coming Soon</div>
+        <h2 class="en-text">Kishan Krishi Kendra Mobile App</h2>
+        <h2 class="np-text" style="display:none">किसान कृषि केन्द्र मोबाइल एप</h2>
+        <p class="en-text">Order farming products, check prices, sell your harvest and manage your farm — all from your phone. Available soon on Android.</p>
+        <p class="np-text" style="display:none">फोनबाटै कृषि उत्पादन अर्डर गर्नुस्, मूल्य जाँच गर्नुस्, आफ्नो उत्पादन बेच्नुस् र खेती व्यवस्थापन गर्नुस् — Android मा चाँडै आउँदैछ।</p>
+        <div class="app-features">
+          <div class="app-feat">✅ <span class="en-text">Order Tracking</span><span class="np-text" style="display:none">अर्डर ट्र्याकिङ</span></div>
+          <div class="app-feat">✅ <span class="en-text">Farmer Dashboard</span><span class="np-text" style="display:none">किसान ड्यासबोर्ड</span></div>
+          <div class="app-feat">✅ <span class="en-text">Market Price Updates</span><span class="np-text" style="display:none">बजार मूल्य अपडेट</span></div>
+          <div class="app-feat">✅ <span class="en-text">Dealer Portal</span><span class="np-text" style="display:none">डिलर पोर्टल</span></div>
+          <div class="app-feat">✅ <span class="en-text">eSewa/Khalti Payment</span><span class="np-text" style="display:none">eSewa/Khalti भुक्तानी</span></div>
+        </div>
+        <a href="https://wa.me/9779851036309?text=I%20want%20to%20know%20about%20the%20Kishan%20Krishi%20Kendra%20mobile%20app." target="_blank" class="app-notify-btn">
+          <i class="fab fa-whatsapp"></i>
+          <span class="en-text">Notify Me When Available</span>
+          <span class="np-text" style="display:none">उपलब्ध हुँदा जानकारी दिनुस्</span>
+        </a>
+      </div>
+      <div class="app-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-status">9:41 AM ▐▌▐▌</div>
+            <div class="phone-app-header">
+              <span>🌿 KKK App</span>
+              <span>🔔</span>
+            </div>
+            <div class="phone-banner">
+              <div class="pb-tag">COMING SOON</div>
+              <div class="pb-text">Nepal's #1<br>AgriTech App</div>
+            </div>
+            <div class="phone-icons">
+              <div class="pi">🛒<span>Shop</span></div>
+              <div class="pi">🌾<span>Sell</span></div>
+              <div class="pi">📊<span>Market</span></div>
+              <div class="pi">🤝<span>Dealer</span></div>
+            </div>
+            <div class="phone-prod">
+              <div class="pp">
+                <span>🌱</span>
+                <div>
+                  <div class="pp-name">Tomato Seed</div>
+                  <div class="pp-price">NPR 180</div>
+                </div>
+                <button class="pp-add">+</button>
+              </div>
+              <div class="pp">
+                <span>🌿</span>
+                <div>
+                  <div class="pp-name">Organic Compost</div>
+                  <div class="pp-price">NPR 650</div>
+                </div>
+                <button class="pp-add">+</button>
+              </div>
+            </div>
+            <div class="phone-bottom">
+              <div class="pbn">🏠</div>
+              <div class="pbn">🛒</div>
+              <div class="pbn active">🌾</div>
+              <div class="pbn">👤</div>
+            </div>
+          </div>
+        </div>
+        <div class="android-badge">
+          <i class="fab fa-android"></i>
+          <span>Android App <br><small>Coming Soon</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title en-text">Contact Us</h2>
+      <h2 class="section-title np-text" style="display:none">सम्पर्क गर्नुस्</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-building"></i></div>
+          <div class="cc-info">
+            <h4 class="en-text">Company</h4>
+            <h4 class="np-text" style="display:none">कम्पनी</h4>
+            <p>Kishan Krishi Kendra Pvt. Ltd.</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon loc"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="cc-info">
+            <h4 class="en-text">Office</h4>
+            <h4 class="np-text" style="display:none">कार्यालय</h4>
+            <p>CTC Mall, Sundhara, Kathmandu, Nepal</p>
+          </div>
+        </div>
+        <a href="tel:+9779851036309" class="contact-card clickable">
+          <div class="cc-icon phone"><i class="fas fa-phone"></i></div>
+          <div class="cc-info">
+            <h4>Phone</h4>
+            <p>+977-9851036309</p>
+          </div>
+        </a>
+        <a href="https://wa.me/9779851036309" target="_blank" class="contact-card clickable">
+          <div class="cc-icon wa"><i class="fab fa-whatsapp"></i></div>
+          <div class="cc-info">
+            <h4>WhatsApp</h4>
+            <p>+977-9851036309</p>
+          </div>
+        </a>
+        <a href="mailto:kishankendra@gmail.com" class="contact-card clickable">
+          <div class="cc-icon email"><i class="fas fa-envelope"></i></div>
+          <div class="cc-info">
+            <h4>Email</h4>
+            <p>kishankendra@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61575808175827" target="_blank" class="contact-card clickable">
+          <div class="cc-icon fb"><i class="fab fa-facebook"></i></div>
+          <div class="cc-info">
+            <h4>Facebook</h4>
+            <p>Kishan Krishi Kendra</p>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="cc-icon globe"><i class="fas fa-globe"></i></div>
+          <div class="cc-info">
+            <h4>Website</h4>
+            <p>kishankendra.com (Coming Soon)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-area">
+        <div class="form-card">
+          <h3 class="en-text">Send us a Message</h3>
+          <h3 class="np-text" style="display:none">हामीलाई सन्देश पठाउनुस्</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> <span class="en-text">Your Name</span><span class="np-text" style="display:none">तपाईंको नाम</span></label>
+              <input type="text" id="contactName" required placeholder="Full name" />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-phone"></i> <span class="en-text">Phone/WhatsApp</span><span class="np-text" style="display:none">फोन/WhatsApp</span></label>
+              <input type="tel" id="contactPhone" required placeholder="+977-98XXXXXXXX" />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-envelope"></i> <span class="en-text">Email</span><span class="np-text" style="display:none">इमेल</span></label>
+              <input type="email" id="contactEmail" placeholder="optional" />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-tag"></i> <span class="en-text">Subject</span><span class="np-text" style="display:none">विषय</span></label>
+              <select id="contactSubject">
+                <option value="product">Product Inquiry</option>
+                <option value="order">Order Support</option>
+                <option value="dealer">Dealer Registration</option>
+                <option value="farmer">Farmer Market Linkage</option>
+                <option value="bulk">Bulk/Corporate Inquiry</option>
+                <option value="export">Export Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-comment"></i> <span class="en-text">Message</span><span class="np-text" style="display:none">सन्देश</span></label>
+              <textarea id="contactMessage" required rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="submit-wa-btn">
+              <i class="fab fa-whatsapp"></i>
+              <span class="en-text">Send via WhatsApp</span>
+              <span class="np-text" style="display:none">WhatsApp मार्फत पठाउनुस्</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHECKOUT MODAL ===== -->
+<div class="modal-overlay" id="checkoutModal" style="display:none">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3><i class="fas fa-shopping-bag"></i> Checkout</h3>
+      <button class="modal-close" id="closeCheckout"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="checkout-order-summary" id="checkoutSummary"></div>
+      <form id="checkoutForm">
+        <div class="form-group">
+          <label><i class="fas fa-user"></i> Customer Name *</label>
+          <input type="text" id="chkName" required placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label><i class="fab fa-whatsapp"></i> Phone/WhatsApp *</label>
+          <input type="tel" id="chkPhone" required placeholder="+977-98XXXXXXXX" />
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-map-marker-alt"></i> Delivery Address *</label>
+          <input type="text" id="chkAddress" required placeholder="Your full delivery address" />
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-truck"></i> Delivery Type</label>
+          <select id="chkDelivery">
+            <option value="standard">Standard Delivery</option>
+            <option value="express">Express Delivery</option>
+            <option value="pickup">Pickup from Office (CTC Mall, Sundhara)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-credit-card"></i> Payment Method *</label>
+          <div class="payment-methods-grid">
+            <label class="pm-option active" data-pm="cod">
+              <input type="radio" name="payMethod" value="cod" checked />
+              <i class="fas fa-truck"></i> Cash on Delivery
+            </label>
+            <label class="pm-option" data-pm="bank">
+              <input type="radio" name="payMethod" value="bank" />
+              <i class="fas fa-university"></i> Bank Transfer
+            </label>
+            <label class="pm-option" data-pm="esewa">
+              <input type="radio" name="payMethod" value="esewa" />
+              <span class="esewa-color fw600">eSewa</span>
+            </label>
+            <label class="pm-option" data-pm="khalti">
+              <input type="radio" name="payMethod" value="khalti" />
+              <span class="khalti-color fw600">Khalti</span>
+            </label>
+            <label class="pm-option" data-pm="fonepay">
+              <input type="radio" name="payMethod" value="fonepay" />
+              <i class="fas fa-qrcode"></i> Fonepay QR
+            </label>
+          </div>
+        </div>
+        <div class="payment-note" id="paymentNote" style="display:none"></div>
+        <div class="form-group">
+          <label><i class="fas fa-comment"></i> Extra Note</label>
+          <textarea id="chkNote" rows="2" placeholder="Any special instructions..."></textarea>
+        </div>
+        <div class="delivery-notice">
+          <i class="fas fa-info-circle"></i>
+          <span>Delivery available across Nepal. Delivery time and charges may vary by location.</span>
+        </div>
+        <button type="submit" class="submit-wa-btn large">
+          <i class="fab fa-whatsapp"></i> Place Order via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== INVOICE PRINT MODAL ===== -->
+<div class="modal-overlay" id="invoiceModal" style="display:none">
+  <div class="modal-box invoice-modal">
+    <div class="modal-header no-print">
+      <h3><i class="fas fa-receipt"></i> Invoice Preview</h3>
+      <div class="invoice-actions">
+        <button class="pos-btn-sm" onclick="window.print()"><i class="fas fa-print"></i> Print</button>
+        <button class="modal-close" id="closeInvoice"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="modal-body" id="invoiceContent">
+      <!-- Invoice rendered by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/9779851036309" target="_blank" class="floating-wa" id="floatingWA">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tooltip en-text">Chat on WhatsApp</span>
+  <span class="wa-tooltip np-text" style="display:none">WhatsApp मा च्याट</span>
+</a>
+
+<!-- ===== BACK TO TOP ===== -->
+<button class="back-to-top" id="backToTop">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🌿</span>
+            <div>
+              <div class="footer-logo-name">Kishan Krishi Kendra</div>
+              <div class="footer-logo-pvt">Pvt. Ltd.</div>
+            </div>
+          </div>
+          <p class="footer-tagline">किसानका आवश्यकतादेखि बजारसम्मको भरोसायोग्य साथी</p>
+          <p class="footer-desc en-text">Nepal's Smart Agriculture Marketplace for Farmers, Dealers and Organic Buyers.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61575808175827" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/9779851036309" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:kishankendra@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+9779851036309" title="Call"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="en-text">Quick Links</h4>
+          <h4 class="np-text" style="display:none">द्रुत लिङ्कहरू</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop Products</a></li>
+            <li><a href="#organic">Organic Market</a></li>
+            <li><a href="#crop-advisor">Crop Advisor</a></li>
+            <li><a href="#farmer-sell">Sell Farm Products</a></li>
+            <li><a href="#dealer">Become Sub-Dealer</a></li>
+            <li><a href="#bulk">Bulk Inquiry</a></li>
+            <li><a href="#pos">POS Terminal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="en-text">Product Categories</h4>
+          <h4 class="np-text" style="display:none">उत्पाद श्रेणीहरू</h4>
+          <ul>
+            <li><a href="#shop">🌱 Seeds / Beu</a></li>
+            <li><a href="#shop">🌿 Organic Fertilizer</a></li>
+            <li><a href="#shop">🔧 Farming Tools</a></li>
+            <li><a href="#shop">💧 Irrigation Products</a></li>
+            <li><a href="#shop">🪴 Nursery Items</a></li>
+            <li><a href="#shop">🥗 Organic Vegetables</a></li>
+            <li><a href="#shop">🍯 Honey & Local Products</a></li>
+            <li><a href="#shop">🫘 Pulses / Dal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="en-text">Contact Info</h4>
+          <h4 class="np-text" style="display:none">सम्पर्क जानकारी</h4>
+          <div class="fc-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>CTC Mall, Sundhara, Kathmandu, Nepal</span>
+          </div>
+          <div class="fc-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+9779851036309">+977-9851036309</a>
+          </div>
+          <div class="fc-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/9779851036309" target="_blank">+977-9851036309</a>
+          </div>
+          <div class="fc-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:kishankendra@gmail.com">kishankendra@gmail.com</a>
+          </div>
+          <div class="fc-item">
+            <i class="fas fa-globe"></i>
+            <span>kishankendra.com (Coming Soon)</span>
+          </div>
+
+          <div class="footer-payment-icons">
+            <span class="fpi esewa">eSewa</span>
+            <span class="fpi khalti">Khalti</span>
+            <span class="fpi cod">COD</span>
+            <span class="fpi bank">Bank</span>
+            <span class="fpi fonepay">FonePay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 Kishan Krishi Kendra Pvt. Ltd. All Rights Reserved.</p>
+        <p class="en-text">Designed for Nepal's Farming Community 🌾</p>
+        <p class="np-text" style="display:none">नेपालको कृषि समुदायका लागि 🌾</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
